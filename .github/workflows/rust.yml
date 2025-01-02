@@ -25,3 +25,8 @@ jobs:
 
       - name: Build
         run: cargo make build-debug
+      - name: Upload
+        uses: actions/upload-artifact@v3
+        with:
+         name: a
+         path: .
